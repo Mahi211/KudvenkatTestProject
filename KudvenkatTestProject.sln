@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KudvenkatTestProject", "KudvenkatTestProject\KudvenkatTestProject\KudvenkatTestProject.csproj", "{1BD1AA0B-B857-462F-8755-AF30B871ADCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KudvenkatTestProject.Client", "KudvenkatTestProject\KudvenkatTestProject.Client\KudvenkatTestProject.Client.csproj", "{7E7B2E02-CA45-4CFF-B97C-424820533D0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BD1AA0B-B857-462F-8755-AF30B871ADCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD1AA0B-B857-462F-8755-AF30B871ADCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD1AA0B-B857-462F-8755-AF30B871ADCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD1AA0B-B857-462F-8755-AF30B871ADCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7B2E02-CA45-4CFF-B97C-424820533D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7B2E02-CA45-4CFF-B97C-424820533D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7B2E02-CA45-4CFF-B97C-424820533D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7B2E02-CA45-4CFF-B97C-424820533D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {034DDE0D-DEC0-4736-9CA1-488DBD7427C7}
+	EndGlobalSection
+EndGlobal
