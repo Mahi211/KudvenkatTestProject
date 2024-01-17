@@ -14,6 +14,10 @@ namespace KudvenkatTestProject.Models
         }
         public async Task<Employee> AddEmployee(Employee employee)
         {
+            if (employee.Department != null)
+            {
+                _appDbContext.Entry(employee.Department).State = EntityState.Unchanged;  
+            }
             var result = await _appDbContext.Employees.AddAsync(employee);
             await _appDbContext.SaveChangesAsync();
             return result.Entity;
@@ -74,7 +78,15 @@ namespace KudvenkatTestProject.Models
                 result.Email = employee.Email;
                 result.DateOfBirth = employee.DateOfBirth;
                 result.PhotoPath = employee.PhotoPath;
-                result.DepartmentId = employee.DepartmentId;
+                if (employee.DepartmentId != 0)
+                {
+                    result.DepartmentId = employee.DepartmentId;
+                }
+                else if (employee.Department != null)
+                {
+                    result.DepartmentId = employee.Department.DepartmentId;
+                        
+                }
                 
 
                 await _appDbContext.SaveChangesAsync();
